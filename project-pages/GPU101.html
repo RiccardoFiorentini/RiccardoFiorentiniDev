@@ -1,0 +1,123 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+      <link rel="icon" href="../assets/images/Quadrata.png" />
+      <title>Riccardo Fiorentini</title>
+      <meta name="description" content="My portfolio">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">Hey, I'm Riccardo Fiorentini</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="riccardo1.fiorentini@mail.polimi.it">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">GPU-101</div>
+        <div class="body-text">
+          Implemented Gauss-Seidel algorithm for sparse matrices on Nvidia GPUs, achieving an average improvement of 31 times compared to the serial version.
+            </div>
+        <image class="project-header-image" src="../assets/images/cuda.jpg">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Abstract</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            The algorithm of Gauss-Seidel is notoriously serial and trades on iteration to solve 
+          problems like linear systems of equations. In particular, the variant to implement has a 
+          backward part where the algorithm is the same but starting from the last row instead of the first one, 
+          flipping all the dependencies. Many attempts to find a way to parallelize this algorithm use the 
+          Jacobi method as an approximation. Consequentially it needs more cycles to find a result of the 
+          same precision. The advantage of sparse matrixes is that computing everything in sequence is unnecessary. 
+          It is possible to find independent groups of rows computable in parallel using algorithms based on a graph-coloring approach. 
+          These analyses, therefore, have a computational cost that we can not neglect. The aim is to create a lighter program 
+          that does not need preprocessing of data and can do the independent operations in parallel using the same input of
+          the serial CPU implementation.
+          For the full report and code see the github link below.
+          </div>
+          <div class="body-text">
+          For the full report and code click the github link below.
+          </div>
+        </div>
+      </div>
+
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+            
+      <a class="icon-link" target="_blank" href="https://github.com/RiccardoFiorentini/GPU101-Projects/blob/main/GPU101___Fiorentini_Riccardo.pdf">
+        <image src="../assets/icons/iconmonstr-github-1.svg" class="footer-icon"/>
+      </a>
+
+	</body>
+
+	</body>
+</html>

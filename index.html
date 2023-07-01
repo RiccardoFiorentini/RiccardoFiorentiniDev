@@ -13,9 +13,9 @@
 
       This should be the same across all pages.
      -->
-    <link rel="icon" href="./assets/images/1311.png" />
-		<title>Unemployables Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <link rel="icon" href="./assets/images/No riflesso.png" />
+		<title>Riccardo Fiorentini</title>
+    <meta name="description" content="My portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="./css/layout.css">
@@ -29,9 +29,9 @@
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Portfolio Title</span>
+        <span class="nav-title">My portfolio</span>
          <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
+        <a class="button" href="mailto:riccardo1.fiorentini@mail.polimi.it">
           <span class="button-text">Contact Me</span>
         </a>
       </a>
@@ -50,9 +50,9 @@
             - Change the number to point to your Unemployable & replace the OpenSea link with your own
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-          <img src="./assets/images/1311.png" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-            <span class="image-caption">Unemployables #1311</span>
+          <img src="./assets/images/Quadrata.png" class="portfolio-header-image">
+          <a class="no-underline" target="_blank" href="">
+            <span class="image-caption"></span>
           </a>
         </div>
 
@@ -65,11 +65,15 @@
           -->
         <div id="portfolio-header-text-container">
             <div class="header-text">
-              <span class="main-title">Hey, I'm @ndoherty_eth.</span>
-              <div class="body-text">I’m a freelance designer and developer who aims to help other creatives build out their portfolios, skillset, and businesses.</div>
+              <span class="main-title">Hey, I'm Riccardo Fiorentini</span>
+              <div class="body-text">riccardo1.fiorentini@mail.polimi.it</div>
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+            <a class="button" id="my-work-experiences-link">
+              <span class="button-text">Check out my work experiences</span> 
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
         </div>
@@ -83,17 +87,20 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
       <div id="about-section">
-        <span class="subheader-text">My Background / About Me</span>
+        <span class="subheader-text">About Me</span>
         <div class="about-section-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">I am a results-oriented student experienced in C++ and CUDA program-
+            ming, actively involved in university associations like Tower of Hanoi and
+            NECSTCamp. I am nearing completion of my bachelor's degree in com-
+            puter science at Politecnico di Milano, driven by my passion for solving
+            logical problems.</div>
         </div>
       </div>
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Work / My Projects</span>
+        <span class="subheader-text">My Projects</span>
 
         <div class="projects-container">
           <!-- 
@@ -119,40 +126,99 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <img src="./assets/images/Genomics-in-Healthcare-1.webp" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Pair-HMM in haplotype calling</div>
+              <div class="body-text project-card-text">
+                Developed a GPU-based implementation of the Pair-HMM forward algorithm
+                boosting flexibility and achieving a remarkable speedup
+                compared to existing methods. The project was accepted for the "Best Student Research Video & Poster Competition"
+                at the EUROCON2023 conference.</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="./project-pages/PairHMM.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
           <div class="project-card">
-            <img src="./assets/images/code.jpeg" class="project-image">
+            <img src="./assets/images/IngSw.jpg" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Final test of Software Engineering</div>
+              <div class="body-text project-card-text">Contributed to the development of 'My Shelfie', a Java-based implementation of
+                the popular board game. The graphical user interface (GUI) was implemented
+                using JavaFX. Collaborated on the design of a robust network handler, utilizing
+                a combination of RMI and Socket to enable seamless connections to the server
+                    through various protocols.</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="./project-pages/IngSw.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
           <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
+            <img src="./assets/images/VHDL.png" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Final test of Logical Networks</div>
+              <div class="body-text project-card-text">VHDL implementation of a simple logic circuit.The aim is to evaluate the ability of students to use the Vivado tool and their fluency in FSM design.</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="./project-pages/RetiLogiche.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/cuda.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">GPU-101</div>
+              <div class="body-text project-card-text">Implemented Gauss-Seidel algorithm for sparse matrices on Nvidia GPUs, achieving an average improvement of 31 times compared to the serial version.</div>
+            </div>
+            <a class="button" href="./project-pages/GPU101.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/API.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Final test of algorithms and principles of computer science</div>
+              <div class="body-text project-card-text">Created a C implementation of a more complex variant of the game Wordle specifically for the Linux terminal. Demonstrated proficiency in designing efficient data
+                structures to represent the game and ensure scalability. The project served as an evaluation of student’s ability to devise effective data structures for handling the
+                intricacies of the advanced game mechanics.</div>
+            </div>
+            <a class="button" href="./project-pages/API.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
         </div>
       </div>
+
+
+      <div id="my-work-experiences-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">Work Experiences</span>
+
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="./assets/images/nanoParticles.webp" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">C.N.R.-Istec Internship</div>
+              <div class="body-text project-card-text">
+                Internship path in the research laboratory on nanoparticles in the field of
+                ecotoxicology.
+              </div>
+            </div>
+            <a class="button" href="./project-pages/CNRIstec.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+
     </div>
 
     <!-- FOOTER -->
@@ -162,26 +228,21 @@
 
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
       
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/riccardo-fiorentini/">
+        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
       </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
       
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      <a class="icon-link" target="_blank" href="https://github.com/RiccardoFiorentini?tab=repositories">
+        <image src="./assets/icons/iconmonstr-github-1.svg" class="footer-icon"/>
       </a>
-    </div>
 
 	</body>
 </html>
+
+
+
+
+
+
+
